@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'DM_Sans';
+  src: url(DM_Sans/DMSans-Regular.ttf);
+}
+
+/*Css Buat Header*/
+header{
+  position: relative;
+  height: 95px;
+  width: 1480px;
+  background-color: #2B2E4A;
+  border-radius: 50px;
+  padding-bottom:5px;
+  margin-bottom: 30px;
+  top: 0;
+}
+
+.header-left{    
+  float: left;
+}
+
+.logo{
+    width: 105px;
+    padding: 10px 10px;
+    margin-bottom: 20pc;
+}
+
+.header-right{
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.header-right a{
+    font-family: 'DM_Sans';
+    text-decoration: none;
+    color: White;
+    font-weight: 800;
+    font-size: 20px;
+    padding:10px 30px;
+    transition: 0.7s ease;
+    flex-shrink: 0;    
+}
+
+.header-right a:hover{
+    background-color: #E84545;    
+    border-radius: 30px;
+    align-items: center;
+    position: static;
+    
+}
+
+/* Untuk Responsif Header */
+
+/* Untuk Tablet Header */
+@media all and (max-width: 1000px) {
+  header {
+    width: 100%;
+  }
+  
+   .header-right {
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .header-right a{
+    font-family: 'DM_Sans';
+    text-decoration: none;
+    color: White;
+    font-weight: 800;
+    font-size: 20px;
+    padding:10px 30px;
+    transition: 0.7s ease;
+    flex-shrink: 0; 
+  }
+
+  .header-right a:hover{
+    background-color: #E84545;    
+    border-radius: 30px;
+    align-items: center;
+    position: static;
+    
+}
+}
+
+/* Untuk Smartphone Header */
+@media all and (max-width: 670px) {
+  header {
+    width: 100%;
+  }
+
+  .header-right{
+  margin-right: 20px;
+  padding-right: 10px;
+  }
+
+  .header-right a{
+    font: 5px;
+    margin-right: 10px ;
+    padding: 5px;
+    transition: 0.7s ease;
+    flex-shrink: 0;
+  }
+  
+  .header-right a:hover{
+    background-color: #E84545;    
+    border-radius: 30px;
+    align-items: center;
+    position: static;
+  }
+}
+
+/*CSS Konten 1*/
+.hero-image{
+  float: center;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  font-family: 'DM_Sans';
+  top: 50%;
+  left: 50%;
+  margin-top: 200px;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size:15px;
+}
+
+.button{
+  padding: 15px 25px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #b0120c;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #999;
+  text-decoration: none;
+  }
+  
+ .button:hover {background-color: #121212} 
+
+.button:active{
+  background-color: #8e4b3e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  font-size: 25px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 2;
+  padding: 2;
+  text-align: left;
+}
+
+body {
+    position: relative;
+    margin: 30px 0 0;
+    padding: 0;
+    font-family: 'DM_Sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+/*CSS Konten 3*/  
+  .container{
+    padding: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin: 5px 15px;
+    gap:20px;
+    position: relative;
+  }
+  
+  .card{
+    width: 100%;
+    height: auto;
+    grid-column: span 8;
+    margin: 10px 0;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+  }
+  
+  .head-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .body-card{
+    padding: 10px 15px;
+  }
+  
+  .body-card h1{
+    margin: 0;  
+  }
+
+  h1{
+    margin-bottom: 30px;
+    font-family: 'DM_Sans';
+  }
+  
+  .body-card svg{
+    width: 31px;
+    position: absolute;
+    bottom: 7px;
+    right: 20px;
+  }
+  
+  
+  @media screen and (min-width: 550px) {
+    .card {
+    grid-column: span 4;
+ }  
+ }
+  
+  
+  @media screen and (min-width: 760px) {
+  
+    .card {
+    width: 350px;
+    margin: 0 10px;
+  }
+  
+  @media screen and (min-width: 960px) {
+  
+  }
+}
+
+/* CSS Footer*/    
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+footer{
+    background: #2B2E4A;
+    height: 100%;
+    width : 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo1{
+    width: 100px;
+  
+}
+
+.footer-content p{
+   line-height: 28px;
+   font-size: 14px;
+   font-family: 'DM_Sans';
+   opacity: none;
+}
+
+.socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem e 3rem e;
+}
+
+.socials li{
+   margin: e 10px;
+}
+.socials a{
+   text-decoration: none;
+   color: #fff;
+} 
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+    padding: 10px;
+}
+.socials a:hover i{
+    color: #E84545;
+}    
+
+.footer-bottom{
+  background-color: #2B2E4A;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.team{
+    opacity: 0.5;
+    font-family: 'DM_Sans';
+}
+
+/*Konten 2*/
+.konten2{
+    box-sizing: border-box;
+    width : 800px;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove{
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 0;    
+  }
+}
+
+
+.card-row {
+   width: 100%;
+}
+
+.card-col {
+    width: 20%;
+    margin: 0px 30px;
+    padding: 0px 30px;
+    animation: mymove 5s infinite;
+   position: relative;
+}
+
+.card {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transition: 0,9s;
+    margin: 10px;
+}
+
+.card:hover {
+    background-color: #E84545;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 670px) {
+    .card-col {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
