@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+/* reset all */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    text decoration : none;
+}
+
+body{
+    background-color: #E84545;
+}
+
+.form-card{
+    width : 450px;
+    margin: 50px;
+    padding : 30px;
+    background-color: white;
+    border-radius: 20px;
+    row-gap : 15px;
+    float : right;
+    box-shadow: -12px 4px 12px, 12px 4px 12px;
+}
+
+.formhead-wrapper{
+    display : grid;
+    grid-template-columns: 100px 1fr;
+    margin-bottom : 15px;
+}
+
+.icon{
+    grid-column: 1/1;
+    height: 75%;
+    width: 75%;
+}
+
+.heading-form{
+    grid-column: 2;
+    color : #E84545;
+    font-size : 25px;
+}
+
+.subheading-form{
+    grid-column: 1/3;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+form{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+
+.cl4{
+    grid-column: 1/span 2;
+}
+
+.rw89{
+    grid-row : 8;
+}
+
+.rw910{
+    grid-row :9;
+}
+
+.rw1213{
+    grid-row : 11;
+}
+
+button{
+    grid-column : 1/3;
+    height: 40px;
+    background-color: #E84545;
+    opacity: 0.8;
+    color: white;
+    border :none;
+    margin-top : 10px;
+}
+
+.inp{
+    padding : 10px;
+    border : none;
+    border-bottom : 1px solid #E84545;
+    border-radius: 14px;
+}
+
+.inp:focus{
+    outline : none;
+    padding-bottom : 20px;
+}
+
+
+button:hover{
+    opacity:1;
+}
+
+.animate-icon{
+    margin-right: 100px;
+    padding-top : 180px;
+
+}
+svg{
+    align-self: center;
+    display : block;
+}
+
+.formpage-send{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding : 10px;
+}
